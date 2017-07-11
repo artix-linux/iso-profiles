@@ -12,7 +12,6 @@ dnsmasq
 dosfstools
 e2fsprogs
 ecryptfs-utils
->x86_64 efibootmgr
 exfat-utils
 f2fs-tools
 file
@@ -20,7 +19,6 @@ filesystem
 findutils
 gawk
 gcc-libs
->multilib gcc-libs-multilib
 gettext
 glibc
 grep
@@ -45,7 +43,9 @@ man-pages
 memtest86+
 mhwd
 mhwd-db
+mkinitcpio
 mkinitcpio-openswap
+>multilib gcc-libs-multilib
 nano
 ntfs-3g
 >openrc acpid-openrc
@@ -53,40 +53,35 @@ ntfs-3g
 >openrc cronie-openrc
 >openrc cryptsetup-openrc
 >openrc dbus-openrc
->openrc elogind-openrc
 >openrc device-mapper-openrc
 >openrc dhcpcd-openrc
->openrc eudev-systemd
+>openrc elogind-openrc
 >openrc haveged-openrc
->openrc libeudev-systemd
 >openrc lvm2-openrc
 >openrc mdadm-openrc
 >openrc netifrc
 >openrc nfs-utils-openrc
 >openrc rsync-openrc
 >openrc wpa_supplicant-openrc
->openrc libusb-nosystemd
->openrc mkinitcpio-nosystemd
 os-prober
 pacman
-pacman-mirrors-dev
 pciutils
->openrc pcmciautils-nosystemd
+pcmciautils
 perl
->openrc procps-ng-elogind
+procps-ng
 psmisc
 reiserfsprogs
 sed
 shadow
 s-nail
->sonar sonar-release
 sudo
 sysfsutils
 tar
 texinfo
 usbutils
->openrc util-linux-nosystemd
+util-linux
 which
+>x86_64 efibootmgr
 xfsprogs
 zd1211-firmware
 zsh

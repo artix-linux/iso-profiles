@@ -9,24 +9,18 @@ mesa-demos
 mobile-broadband-provider-info
 modemmanager
 >multilib lib32-mesa-demos
+networkmanager
 nss-mdns
 numlockx
 >openrc alsa-utils-openrc
 >openrc avahi-openrc
->openrc openrc-settingsd
 >openrc displaymanager-openrc
 >openrc networkmanager-openrc
 >openrc ntp-openrc
+>openrc openrc-settingsd
 >openrc openssh-openrc
->openrc accountsservice-elogind
->openrc upower-nosystemd
->openrc udisks2-elogind
->openrc xdg-user-dirs-nosystemd
->openrc xorg-server-nosystemd
->openrc media-player-info-nosystemd
->openrc libpulse-nosystemd
+>openrc xf86-input-libinput
 powertop
-networkmanager
 terminus-font
 ttf-bitstream-vera
 ttf-dejavu
@@ -35,14 +29,16 @@ ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
 xdg-su
+xdg-user-dirs
 xdg-utils
 xf86-input-elographics
 xf86-input-evdev
 xf86-input-keyboard
->openrc xf86-input-libinput-nosystemd
 xf86-input-mouse
 xf86-input-void
+xorg-server
 xorg-server-utils
 xorg-twm
 xorg-utils
 xorg-xinit
+
