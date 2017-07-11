@@ -1,0 +1,72 @@
+alsa-firmware
+>basic cromnix-lxqt-basic-settings
+compton
+compton-conf
+dmidecode
+>extra lximage-qt
+>extra cromnix-lxqt-extra-settings
+>extra octopi-cachecleaner
+>extra octopi-repoeditor
+>extra vlc
+>extra qpdfview
+gvfs
+inxi
+juffed-qt5
+lxqt-about
+lxqt-admin
+lxqt-common
+lxqt-config
+lxqt-globalkeys
+lxqt-notificationd
+lxqt-openssh-askpass
+lxqt-panel
+lxqt-policykit
+lxqt-powermanagement
+lxqt-qtplugin
+lxqt-runner
+lxqt-session
+lxqt-sudo
+mobile-broadband-provider-info
+modemmanager
+network-manager-applet
+nss-mdns
+obconf-qt
+openbox
+>openrc alsa-utils-openrc
+>openrc avahi-openrc
+>openrc openrc-settingsd
+>openrc cronjobs
+>openrc displaymanager-openrc
+>openrc networkmanager-openrc
+>openrc ntp-openrc
+>openrc openssh-openrc
+>openrc sddm-elogind
+>openrc syslog-ng-openrc
+>openrc json-c
+>openrc xdg-user-dirs-nosystemd
+>openrc xorg-server-nosystemd
+>openrc accountsservice-elogind
+>openrc upower-nosystemd
+>openrc udisks2-elogind
+>openrc media-player-info-nosystemd
+>openrc libpulse-nosystemd
+pcmanfm-qt
+powertop
+qterminal
+qps
+octopi
+octopi-notifier-qt5
+qupzilla
+sddm-qt-manjaro-theme
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-droid
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
+xarchiver
+xdg-su
+xdg-utils
+xorg-twm
+xorg-xinit
