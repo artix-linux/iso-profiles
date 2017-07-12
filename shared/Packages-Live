@@ -1,7 +1,6 @@
-#calamares
-#cromnix-live-skel
-#grub-theme-live-cromnix
+calamares
 mkinitcpio-nfs-utils
 nbd
-#>openrc cromnix-live-openrc
+>openrc artix-live-openrc
 squashfs-tools
+artix-live-portable-efi

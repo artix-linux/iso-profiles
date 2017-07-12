@@ -1,14 +1,15 @@
 alsa-firmware
-#>basic cromnix-lxqt-basic-settings
+>basic artix-lxqt-basic-presets
 compton
 #compton-conf
 dmidecode
 >extra lximage-qt
-#>extra cromnix-lxqt-extra-settings
+>extra artix-lxqt-extra-presets
 >extra vlc
 >extra qpdfview
 gvfs
 inxi
+kwrite
 #juffed-qt5
 lxqt-about
 lxqt-admin
@@ -32,7 +33,7 @@ obconf-qt
 openbox
 >openrc alsa-utils-openrc
 >openrc avahi-openrc
-#>openrc openrc-settingsd
+>openrc openrc-settingsd
 >openrc displaymanager-openrc
 >openrc networkmanager-openrc
 >openrc ntp-openrc
@@ -47,8 +48,7 @@ powertop
 qterminal
 qps
 qupzilla
-#sddm-qt-manjaro-theme
-sddm
+artix-sddm-theme
 terminus-font
 ttf-bitstream-vera
 ttf-dejavu
