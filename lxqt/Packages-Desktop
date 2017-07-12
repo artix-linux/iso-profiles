@@ -1,17 +1,15 @@
 alsa-firmware
->basic cromnix-lxqt-basic-settings
+#>basic cromnix-lxqt-basic-settings
 compton
-compton-conf
+#compton-conf
 dmidecode
 >extra lximage-qt
->extra cromnix-lxqt-extra-settings
->extra octopi-cachecleaner
->extra octopi-repoeditor
+#>extra cromnix-lxqt-extra-settings
 >extra vlc
 >extra qpdfview
 gvfs
 inxi
-juffed-qt5
+#juffed-qt5
 lxqt-about
 lxqt-admin
 lxqt-common
@@ -34,30 +32,23 @@ obconf-qt
 openbox
 >openrc alsa-utils-openrc
 >openrc avahi-openrc
->openrc openrc-settingsd
->openrc cronjobs
+#>openrc openrc-settingsd
 >openrc displaymanager-openrc
 >openrc networkmanager-openrc
 >openrc ntp-openrc
 >openrc openssh-openrc
->openrc sddm-elogind
 >openrc syslog-ng-openrc
 >openrc json-c
->openrc xdg-user-dirs-nosystemd
->openrc xorg-server-nosystemd
->openrc accountsservice-elogind
->openrc upower-nosystemd
->openrc udisks2-elogind
->openrc media-player-info-nosystemd
->openrc libpulse-nosystemd
+xdg-user-dirs
+xorg-server
+media-player-info
 pcmanfm-qt
 powertop
 qterminal
 qps
-octopi
-octopi-notifier-qt5
 qupzilla
-sddm-qt-manjaro-theme
+#sddm-qt-manjaro-theme
+sddm
 terminus-font
 ttf-bitstream-vera
 ttf-dejavu
@@ -66,7 +57,6 @@ ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
 xarchiver
-xdg-su
 xdg-utils
 xorg-twm
 xorg-xinit
