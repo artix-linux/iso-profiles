@@ -11,15 +11,14 @@ modemmanager
 >multilib lib32-mesa-demos
 networkmanager
 nss-mdns
-numlockx
 >openrc alsa-utils-openrc
 >openrc avahi-openrc
 >openrc displaymanager-openrc
 >openrc networkmanager-openrc
 >openrc ntp-openrc
->openrc openrc-settingsd
+#>openrc openrc-settingsd
 >openrc openssh-openrc
->openrc xf86-input-libinput
+xf86-input-libinput
 powertop
 terminus-font
 ttf-bitstream-vera
@@ -28,7 +27,6 @@ ttf-droid
 ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
-xdg-su
 xdg-user-dirs
 xdg-utils
 xf86-input-elographics

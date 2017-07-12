@@ -41,15 +41,11 @@ lsb-release
 man-db
 man-pages
 memtest86+
-mhwd
-mhwd-db
 mkinitcpio
-mkinitcpio-openswap
 >multilib gcc-libs-multilib
 nano
 ntfs-3g
 >openrc acpid-openrc
->openrc cpupower-openrc
 >openrc cronie-openrc
 >openrc cryptsetup-openrc
 >openrc dbus-openrc

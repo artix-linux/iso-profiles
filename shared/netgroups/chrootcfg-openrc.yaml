@@ -1,0 +1,288 @@
+- name: "system"
+  description: "system"
+  hidden: false
+  selected: false
+  critical: false
+  subgroups:
+  - name: "base"
+    description: "Command line interface"
+    hidden: true
+    selected: true
+    critical: false
+    packages:
+        - bash
+        - bzip2
+        - coreutils
+        - cryptsetup-openrc
+        - device-mapper-openrc
+        - dhcpcd-openrc
+        - diffutils
+        - e2fsprogs
+        - file
+        - filesystem
+        - findutils
+        - gawk
+        - gcc-libs
+        - gettext
+        - glibc-openrc
+        - grep
+        - gzip
+        - inetutils-openrc
+        - iproute2
+        - iputils
+        - jfsutils
+        - less
+        - licenses
+        - logrotate
+        - lvm2-openrc
+        - man-db
+        - man-pages
+        - mdadm-openrc
+        - mhwd
+        - mkinitcpio
+        - nano
+        - netifrc
+        - pacman
+        - pciutils
+        - pcmciautils
+        - perl
+        - procps-ng
+        - psmisc
+        - reiserfsprogs
+        - s-nail
+        - sed
+        - shadow
+        - sudo
+        - sysfsutils
+        - tar
+        - texinfo
+        - eudev-openrc
+        - usbutils
+        - util-linux
+        - vi
+        - which
+        - xfsprogs
+        - tcp_wrappers
+        - dbus-openrc
+        - elogind-openrc
+        - acpid-openrc
+        - syslog-ng-openrc
+        - cronie-openrc
+        - json-c
+        - lsb-release
+        - openrc-settingsd
+
+  - name: "kernel"
+    description: "Kernel packages"
+    hidden: true
+    selected: true
+    critical: false
+    packages:
+        - linux-lts
+
+  - name: "boot"
+    description: "Bootloader packages"
+    hidden: true
+    selected: true
+    critical: false
+    packages:
+        - grub
+        - os-prober
+        - memtest86+
+        - efibootmgr
+
+  - name: "network"
+    description: "Network packages"
+    hidden: false
+    selected: true
+    critical: false
+    packages:
+            - networkmanager-openrc
+            - avahi-openrc
+            - ntp-openrc
+            - rsync-openrc
+            - bluez-openrc
+            - dhclient
+            - dnsmasq
+            - openssh-openrc
+            - mobile-broadband-provider-info
+            - modemmanager
+            - nss-mdns
+            - wpa_supplicant-openrc
+            - tcp-wrappers
+
+  - name: "base-devel"
+    description: "Development packages assumed installed for making packages"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+            - autoconf
+            - automake
+            - binutils
+            - bison
+            - fakeroot
+            - flex
+            - gcc
+            - groff
+            - libtool
+            - m4
+            - make
+            - patch
+            - pkg-config
+            - yaourt
+
+  - name: "firmware"
+    description: "Firmware"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+            - bluez-firmware
+            - alsa-firmware
+            - b43-fwcutter
+            - ipw2100-fw
+            - ipw2200-fw
+            - zd1211-firmware
+            - manjaro-firmware
+
+  - name: 'filesystems'
+    description: 'Extra Filesystems'
+    selected: false
+    hidden: false
+    critical: false
+    packages:
+            - btrfs-progs
+            - dosfstools
+            - ecryptfs-utils
+            - exfat-utils
+            - f2fs-tools
+            - nfs-utils-openrc
+            - ntfs-3g
+            - dmraid
+
+  - name: "util"
+    description: "Utilities packages"
+    selected: true
+    hidden: false
+    critical: false
+    packages:
+            - artools-base
+            - zsh
+            - acpi
+            - haveged-openrc
+            - crda
+            - powertop
+            - dmidecode
+            - inxi
+            - zip
+            - unzip
+
+- name: "desktop"
+  description: "Desktop"
+  hidden: false
+  selected: false
+  critical: false
+  subgroups:
+  - name: "displaymanager"
+    description: "Displaymanager and Xorg"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+        - displaymanager-openrc
+        - artix-sddm-theme
+        - xdg-user-dirs
+        - xdg-utils
+        - xorg-server
+        - xorg-server-utils
+        - xorg-twm
+        - xorg-utils
+        - xorg-xinit
+  - name: 'lxqt-basic'
+    description: 'lxqt basic'
+    selected: false
+    hidden: false
+    critical: false
+    packages:
+        - lxqt-about
+        - lxqt-admin
+        - lxqt-common
+        - lxqt-config
+        - lxqt-globalkeys
+        - lxqt-notificationd
+        - lxqt-openssh-askpass
+        - lxqt-panel
+        - lxqt-policykit
+        - lxqt-powermanagement
+        - lxqt-qtplugin
+        - lxqt-runner
+        - lxqt-session
+        - lxqt-sudo
+        - obconf-qt
+        - openbox
+        - pcmanfm-qt
+        - gvfs
+        - qterminal
+        - kwrite
+        - compton
+        - xarchiver
+        - qps
+        - qupzilla
+        - network-manager-applet
+        - artix-lxqt-basic-presets
+
+  - name: 'lxqt-extra'
+    description: 'lxqt extra'
+    selected: false
+    hidden: false
+    critical: false
+    packages:
+        - lximage-qt
+        - vlc
+        - qpdfview
+        - artix-lxqt-extra-presets
+        - gvfs-afc
+        - gvfs-gphoto2
+        - gvfs-mtp
+        - gvfs-nfs
+        - gvfs-smb
+        - qt5-styleplugins
+        - lxappearance
+
+- name: 'fonts'
+  description: 'Fonts'
+  selected: false
+  hidden: false
+  critical: false
+  packages:
+       - terminus-font
+       - ttf-bitstream-vera
+       - ttf-dejavu
+       - ttf-droid
+       - ttf-inconsolata
+       - ttf-indic-otf
+       - ttf-liberation
+       - noto-fonts
+
+- name: 'audio'
+  description: 'Audio'
+  selected: false
+  hidden: false
+  critical: false
+  packages:
+        - pulseaudio
+        - pulseaudio-alsa
+        - pavucontrol-qt
+        - alsa-utils-openrc
+
+- name: 'printing'
+  description: 'Printing'
+  selected: false
+  hidden: false
+  critical: false
+  packages:
+        - bluez-cups
+        - cups-openrc
+        - cups-filters
+        - cups-pdf
