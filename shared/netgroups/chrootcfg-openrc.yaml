@@ -38,7 +38,6 @@
         - man-db
         - man-pages
         - mdadm-openrc
-        - mhwd
         - mkinitcpio
         - nano
         - netifrc
@@ -62,7 +61,6 @@
         - vi
         - which
         - xfsprogs
-        - tcp_wrappers
         - dbus-openrc
         - elogind-openrc
         - acpid-openrc
@@ -130,7 +128,6 @@
             - make
             - patch
             - pkg-config
-            - yaourt
 
   - name: "firmware"
     description: "Firmware"
@@ -144,7 +141,6 @@
             - ipw2100-fw
             - ipw2200-fw
             - zd1211-firmware
-            - manjaro-firmware
 
   - name: 'filesystems'
     description: 'Extra Filesystems'
