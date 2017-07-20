@@ -30,7 +30,7 @@
         - gettext
         - glibc-openrc
         - grep
-        - vgzip
+        - gzip
         - inetutils-openrc
         - iproute2
         - iputils
