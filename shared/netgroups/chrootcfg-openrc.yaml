@@ -13,11 +13,15 @@
         - bash
         - bzip2
         - coreutils
+        - cronie-openrc
         - cryptsetup-openrc
+        - dbus-openrc
         - device-mapper-openrc
         - dhcpcd-openrc
         - diffutils
         - e2fsprogs
+        - elogind-openrc
+        - eudev-openrc
         - file
         - filesystem
         - findutils
@@ -31,9 +35,11 @@
         - iproute2
         - iputils
         - jfsutils
+        - json-c
         - less
         - licenses
         - logrotate
+        - lsb-release
         - lvm2-openrc
         - man-db
         - man-pages
@@ -41,6 +47,9 @@
         - mkinitcpio
         - nano
         - netifrc
+        - openrc-settingsd
+        - opensysusers
+        - opentmpfiles
         - pacman
         - pciutils
         - pcmciautils
@@ -48,28 +57,19 @@
         - procps-ng
         - psmisc
         - reiserfsprogs
-        - s-nail
         - sed
         - shadow
+        - s-nail
         - sudo
         - sysfsutils
+        - syslog-ng-openrc
         - tar
         - texinfo
-        - eudev-openrc
         - usbutils
         - util-linux
         - vi
         - which
         - xfsprogs
-        - dbus-openrc
-        - elogind-openrc
-        - acpid-openrc
-        - syslog-ng-openrc
-        - cronie-openrc
-        - json-c
-        - lsb-release
-        - openrc-settingsd
-
   - name: "kernel"
     description: "Kernel packages"
     hidden: true
@@ -77,7 +77,6 @@
     critical: false
     packages:
         - linux-lts
-
   - name: "boot"
     description: "Bootloader packages"
     hidden: true
@@ -88,91 +87,106 @@
         - os-prober
         - memtest86+
         - efibootmgr
-
   - name: "network"
     description: "Network packages"
     hidden: false
     selected: true
     critical: false
     packages:
-            - networkmanager-openrc
-            - avahi-openrc
-            - ntp-openrc
-            - rsync-openrc
-            - bluez-openrc
-            - dhclient
-            - dnsmasq
-            - openssh-openrc
-            - mobile-broadband-provider-info
-            - modemmanager
-            - nss-mdns
-            - wpa_supplicant-openrc
-            - tcp-wrappers
-
+        - networkmanager-openrc
+        - avahi-openrc
+        - ntp-openrc
+        - bluez-openrc
+        - openssh-openrc
+        - modemmanager
+        - nfs-utils-openrc
+        - wpa_supplicant-openrc
   - name: "base-devel"
     description: "Development packages assumed installed for making packages"
     hidden: false
     selected: false
     critical: false
     packages:
-            - autoconf
-            - automake
-            - binutils
-            - bison
-            - fakeroot
-            - flex
-            - gcc
-            - groff
-            - libtool
-            - m4
-            - make
-            - patch
-            - pkg-config
-
+        - autoconf
+        - automake
+        - binutils
+        - bison
+        - fakeroot
+        - flex
+        - gcc
+        - groff
+        - libtool
+        - m4
+        - make
+        - patch
+        - pkg-config
   - name: "firmware"
     description: "Firmware"
     hidden: false
     selected: false
     critical: false
     packages:
-            - bluez-firmware
-            - alsa-firmware
-            - b43-fwcutter
-            - ipw2100-fw
-            - ipw2200-fw
-            - zd1211-firmware
-
+        - bluez-firmware
+        - alsa-firmware
+        - b43-fwcutter
+        - ipw2100-fw
+        - ipw2200-fw
+        - zd1211-firmware
   - name: 'filesystems'
     description: 'Extra Filesystems'
     selected: false
     hidden: false
     critical: false
     packages:
-            - btrfs-progs
-            - dosfstools
-            - ecryptfs-utils
-            - exfat-utils
-            - f2fs-tools
-            - nfs-utils-openrc
-            - ntfs-3g
-            - dmraid
-
-  - name: "util"
+        - btrfs-progs
+        - dosfstools
+        - ecryptfs-utils
+        - exfat-utils
+        - f2fs-tools
+        - ntfs-3g
+        - dmraid
+  - name: "apps"
     description: "Utilities packages"
     selected: true
     hidden: false
     critical: false
     packages:
-            - artools-base
-            - zsh
-            - acpi
-            - haveged-openrc
-            - crda
-            - powertop
-            - dmidecode
-            - inxi
-            - zip
-            - unzip
+        - artools-base
+        - acpi
+        - haveged-openrc
+        - powertop
+        - dmidecode
+        - inxi
+        - acpid-openrc
+        - rsync-openrc
+
+- name: "Xorg"
+  description: "Xorg server"
+  hidden: false
+  selected: false
+  critical: false
+  subgroups:
+  - name: "Xorg base"
+    description: "Xorg server"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+        - xorg-server
+  - name: "Xorg drivers"
+    description: "Xorg server"
+    hidden: false
+    selected: false
+    critical: false
+    packages:
+        - xf86-video-amdgpu
+        - xf86-video-ati
+        - xf86-video-intel
+        - xf86-video-nouveau
+        - xf86-video-openchrome
+        - xf86-video-fbdev
+        - xf86-video-vesa
+        - xf86-video-vmware
 
 - name: "desktop"
   description: "Desktop"
@@ -188,13 +202,6 @@
     packages:
         - displaymanager-openrc
         - artix-sddm-theme
-        - xdg-user-dirs
-        - xdg-utils
-        - xorg-server
-        - xorg-server-utils
-        - xorg-twm
-        - xorg-utils
-        - xorg-xinit
   - name: 'lxqt-basic'
     description: 'lxqt basic'
     selected: false
@@ -227,7 +234,8 @@
         - qupzilla
         - network-manager-applet
         - artix-lxqt-basic-presets
-
+        - xdg-user-dirs
+        - xdg-utils
   - name: 'lxqt-extra'
     description: 'lxqt extra'
     selected: false
