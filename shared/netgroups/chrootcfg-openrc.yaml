@@ -87,6 +87,7 @@
         - os-prober
         - memtest86+
         - efibootmgr
+        - dosfstools
   - name: "network"
     description: "Network packages"
     hidden: false
@@ -139,7 +140,6 @@
     critical: false
     packages:
         - btrfs-progs
-        - dosfstools
         - ecryptfs-utils
         - exfat-utils
         - f2fs-tools
@@ -187,15 +187,16 @@
         - xf86-video-fbdev
         - xf86-video-vesa
         - xf86-video-vmware
+        - virtualbox-guest-modules-artix
 
 - name: "desktop"
-  description: "Desktop"
+  description: "Desktop packages"
   hidden: false
   selected: false
   critical: false
   subgroups:
   - name: "displaymanager"
-    description: "Displaymanager and Xorg"
+    description: "Displaymanager"
     hidden: false
     selected: false
     critical: false

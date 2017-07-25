@@ -1,13 +1,13 @@
 [H[2J
-Cromnix Live ISO (\l) - \s-\r \m
+Artix Live ISO (\l) - \s-\r \m
 
 
 
-# Welcome to Cromnix #
+# Welcome to Artix #
 
 
 login for the live environment:
-    user     'cromnix'
-    password 'cromnix'
+    user     'artix'
+    password 'artix'
 
 
