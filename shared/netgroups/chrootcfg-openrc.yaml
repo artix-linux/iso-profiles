@@ -245,14 +245,12 @@
     packages:
         - lximage-qt
         - vlc
-        - qpdfview
         - artix-lxqt-extra-presets
         - gvfs-afc
         - gvfs-gphoto2
         - gvfs-mtp
         - gvfs-nfs
         - gvfs-smb
-        - qt5-styleplugins
         - lxappearance
 
 - name: 'fonts'
