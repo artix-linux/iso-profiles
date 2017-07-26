@@ -6,7 +6,7 @@ compton
 dmidecode
 >extra artix-lxqt-extra-presets
 >extra lximage-qt
->extra qpdfview
+#>extra qpdfview
 >extra qupzilla
 >extra vlc
 gvfs

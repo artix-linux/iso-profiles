@@ -4,3 +4,4 @@ nbd
 >openrc artix-live-openrc
 squashfs-tools
 artix-live-portable-efi
+partitionmanager
