@@ -11,7 +11,8 @@ INFO = \
 	repo_info
 
 LIVE_ETC = \
-	$(wildcard shared/live-overlay/etc/*)
+	shared/live-overlay/etc/issue \
+	shared/live-overlay/etc/fstab
 
 LIVE_ETC_DEFAULT = \
 	$(wildcard shared/live-overlay/etc/default/*)
@@ -23,10 +24,12 @@ LIVE_ETC_SUDOERS = \
 	$(wildcard shared/live-overlay/etc/sudoers.d/*)
 
 LXQT = \
-	$(wildcard lxqt/*)
+	$(wildcard lxqt/Packages-*) \
+	lxqt/profile.conf
 
 CINNAMON = \
-	$(wildcard cinnamon/*)
+	$(wildcard cinnamon/Packages-*) \
+	cinnamon/profile.conf
 
 CINNAMON_LIGHTDM = \
 	$(wildcard cinnamon/desktop-overlay/etc/lightdm/*.conf)
