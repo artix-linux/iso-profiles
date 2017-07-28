@@ -4,24 +4,24 @@ PREFIX = /usr/local
 SYSCONFDIR = /etc
 
 SHARED = \
-	$(wildcard shared/Packages-*) \
-	$(wildcard shared/*.example)
+	$(wildcard base/Packages-*) \
+	$(wildcard base/*.example)
 
 INFO = \
 	repo_info
 
 LIVE_ETC = \
-	shared/live-overlay/etc/issue \
-	shared/live-overlay/etc/fstab
+	base/live-overlay/etc/issue \
+	base/live-overlay/etc/fstab
 
 LIVE_ETC_DEFAULT = \
-	$(wildcard shared/live-overlay/etc/default/*)
+	$(wildcard base/live-overlay/etc/default/*)
 
 LIVE_ETC_PAM = \
-	$(wildcard shared/live-overlay/etc/pam.d/*)
+	$(wildcard base/live-overlay/etc/pam.d/*)
 
 LIVE_ETC_SUDOERS = \
-	$(wildcard shared/live-overlay/etc/sudoers.d/*)
+	$(wildcard base/live-overlay/etc/sudoers.d/*)
 
 LXQT = \
 	$(wildcard lxqt/Packages-*) \
@@ -34,24 +34,24 @@ CINNAMON = \
 CINNAMON_LIGHTDM = \
 	$(wildcard cinnamon/desktop-overlay/etc/lightdm/*.conf)
 
-install_shared:
+install_base:
 	install -dm0755 $(DESTDIR)$(PREFIX)/share/artools/iso-profiles
 	install -m0644 ${INFO} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles
 
-	install -dm0755 $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/shared
-	install -m0644 ${SHARED} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/shared
+	install -dm0755 $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base
+	install -m0644 ${SHARED} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base
 
-	install -dm0755 $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/shared/live-overlay/etc
-	install -m0644 ${LIVE_ETC} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/shared/live-overlay/etc
+	install -dm0755 $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc
+	install -m0644 ${LIVE_ETC} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc
 
-	install -dm0755 $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/shared/live-overlay/etc/default
-	install -m0644 ${LIVE_ETC_DEFAULT} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/shared/live-overlay/etc/default
+	install -dm0755 $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc/default
+	install -m0644 ${LIVE_ETC_DEFAULT} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc/default
 
-	install -dm0755 $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/shared/live-overlay/etc/pam.d
-	install -m0644 ${LIVE_ETC_PAM} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/shared/live-overlay/etc/pam.d
+	install -dm0755 $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc/pam.d
+	install -m0644 ${LIVE_ETC_PAM} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc/pam.d
 
-	install -dm0755 $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/shared/live-overlay/etc/sudoers.d
-	install -m0644 ${LIVE_ETC_SUDOERS} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/shared/live-overlay/etc/sudoers.d
+	install -dm0755 $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc/sudoers.d
+	install -m0644 ${LIVE_ETC_SUDOERS} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc/sudoers.d
 
 install_profiles:
 	install -dm0755 $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/lxqt
@@ -63,22 +63,22 @@ install_profiles:
 	install -dm0755 $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/cinnamon/desktop-overlay/etc/lightdm
 	install -m0644 ${CINNAMON_LIGHTDM} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/cinnamon/desktop-overlay/etc/lightdm
 
-uninstall_shared:
+uninstall_base:
 	for f in ${INFO}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/$$f; done
-	for f in ${SHARED}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/shared/$$f; done
-	for f in ${LIVE_ETC}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/shared/live-overlay/etc/$$f; done
-	for f in ${LIVE_ETC_DEFAULT}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/shared/live-overlay/etc/default/$$f; done
-	for f in ${LIVE_ETC_PAM}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/shared/live-overlay/etc/pam.d/$$f; done
-	for f in ${LIVE_ETC_SUDOERS}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/shared/live-overlay/etc/sudoers.d/$$f; done
+	for f in ${SHARED}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/$$f; done
+	for f in ${LIVE_ETC}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc/$$f; done
+	for f in ${LIVE_ETC_DEFAULT}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc/default/$$f; done
+	for f in ${LIVE_ETC_PAM}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc/pam.d/$$f; done
+	for f in ${LIVE_ETC_SUDOERS}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc/sudoers.d/$$f; done
 
 uninstall_profiles:
 	for f in ${LXQT}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/lxqt/$$f; done
 	for f in ${CINNAMON}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/cinnamon/$$f; done
 	for f in ${CINNAMON_LIGHTDM}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/cinnamon/desktop-overlay/etc/lightdm/$$f; done
 
-install: install_shared install_profiles
+install: install_base install_profiles
 
-uninstall: uninstall_shared uninstall_profiles
+uninstall: uninstall_base uninstall_profiles
 
 dist:
 	git archive --format=tar --prefix=iso-profiles-$(Version)/ $(Version) | gzip -9 > iso-profiles-$(Version).tar.gz
