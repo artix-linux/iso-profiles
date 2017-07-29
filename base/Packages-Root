@@ -42,7 +42,6 @@ man-db
 man-pages
 memtest86+
 mkinitcpio
->multilib gcc-libs-multilib
 nano
 ntfs-3g
 >openrc acpid-openrc

@@ -1,14 +1,13 @@
 alsa-firmware
 artix-sddm-theme
->basic artix-lxqt-basic-presets
+artix-lxqt-presets
 compton
 #compton-conf
 dmidecode
->extra artix-lxqt-extra-presets
->extra lximage-qt
-#>extra qpdfview
->extra qupzilla
->extra vlc
+#lximage-qt
+#qpdfview
+#qupzilla
+#vlc
 gvfs
 inxi
 #juffed-qt5
