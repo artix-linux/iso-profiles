@@ -1,8 +1,6 @@
 alsa-firmware
->basic artix-cinnamon-basic-presets
+artix-cinnamon-presets
 dmidecode
->extra artix-cinnamon-extra-presets
->extra vlc
 inxi
 cinnamon
 media-player-info
