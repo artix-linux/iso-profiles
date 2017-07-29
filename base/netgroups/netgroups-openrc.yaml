@@ -147,7 +147,7 @@
         - dmraid
   - name: "apps"
     description: "Utilities packages"
-    selected: true
+    selected: false
     hidden: false
     critical: false
     packages:
@@ -203,8 +203,8 @@
     packages:
         - displaymanager-openrc
         - artix-sddm-theme
-  - name: 'lxqt-basic'
-    description: 'lxqt basic'
+  - name: 'lxqt'
+    description: 'lxqt desktop'
     selected: false
     hidden: false
     critical: false
@@ -234,24 +234,57 @@
         - qps
         - qupzilla
         - network-manager-applet
-        - artix-lxqt-basic-presets
+        - artix-lxqt-presets
         - xdg-user-dirs
         - xdg-utils
-  - name: 'lxqt-extra'
-    description: 'lxqt extra'
-    selected: false
-    hidden: false
-    critical: false
-    packages:
         - lximage-qt
         - vlc
-        - artix-lxqt-extra-presets
         - gvfs-afc
         - gvfs-gphoto2
         - gvfs-mtp
         - gvfs-nfs
         - gvfs-smb
         - lxappearance
+  - name: 'cinnamon'
+    description: 'cinnamon desktop'
+    selected: false
+    hidden: false
+    critical: false
+    packages:
+        - accountsservice
+        - caribou
+        - cinnamon-settings-daemon
+        - cinnamon-session
+        - cinnamon-translations
+        - cjs
+        - clutter-gtk
+        - gnome-backgrounds
+        - gnome-themes-standard
+        - gstreamer
+        - libgnome-keyring
+        - libkeybinder3
+        - librsvg
+        - muffin
+        - python2-cairo
+        - python-dbus
+        - python2-dbus
+        - python2-pillow
+        - python2-pam
+        - python2-pexpect
+        - python2-pyinotify
+        - python2-lxml
+        - cinnamon-control-center
+        - cinnamon-screensaver
+        - cinnamon-menus
+        - libgnomekbd
+        - network-manager-applet
+        - nemo
+        - polkit-gnome
+        - xapps
+        - python2-gobject
+        - gedit
+        - gnome-terminal
+        - blueberry
 
 - name: 'fonts'
   description: 'Fonts'
@@ -289,3 +322,4 @@
         - cups-openrc
         - cups-filters
         - cups-pdf
+        - system-config-printer
