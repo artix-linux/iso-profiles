@@ -3,9 +3,9 @@ Version=0.4
 PREFIX = /usr/local
 SYSCONFDIR = /etc
 
-SHARED = \
+BASE = \
 	$(wildcard base/Packages-*) \
-	$(wildcard base/*.example)
+	base/profile.conf
 
 INFO = \
 	repo_info
@@ -39,7 +39,7 @@ install_base:
 	install -m0644 ${INFO} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles
 
 	install -dm0755 $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base
-	install -m0644 ${SHARED} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base
+	install -m0644 ${BASE} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base
 
 	install -dm0755 $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc
 	install -m0644 ${LIVE_ETC} $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc
@@ -65,7 +65,7 @@ install_profiles:
 
 uninstall_base:
 	for f in ${INFO}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/$$f; done
-	for f in ${SHARED}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/$$f; done
+	for f in ${BASE}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/$$f; done
 	for f in ${LIVE_ETC}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc/$$f; done
 	for f in ${LIVE_ETC_DEFAULT}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc/default/$$f; done
 	for f in ${LIVE_ETC_PAM}; do rm -f $(DESTDIR)$(PREFIX)/share/artools/iso-profiles/base/live-overlay/etc/pam.d/$$f; done
