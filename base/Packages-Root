@@ -41,7 +41,7 @@ lsb-release
 man-db
 man-pages
 memtest86+
-mkinitcpio
+mkinitcpio-openswap
 nano
 ntfs-3g
 >openrc acpid-openrc
