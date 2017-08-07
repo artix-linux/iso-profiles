@@ -1,0 +1,53 @@
+acpi
+alsa-firmware
+artix-sddm-theme
+blueberry
+clipit
+compton
+dash
+dmenu
+dmidecode
+gsimplecal
+feh
+i3blocks
+i3lock
+i3lock-wrapper
+i3status
+i3-wm
+j4-dmenu-desktop
+lm_sensors
+network-manager-applet
+>openrc alsa-utils-openrc
+>openrc avahi-openrc
+>openrc displaymanager-openrc
+>openrc json-c
+>openrc networkmanager-openrc
+>openrc ntp-openrc
+>openrc openrc-settingsd
+>openrc openssh-openrc
+>openrc syslog-ng-openrc
+pcmanfm
+polkit
+powertop
+ranger
+sxiv
+screenfetch
+terminus-font
+termite
+tree
+ttf-bitstream-vera
+ttf-dejavu
+ttf-droid
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
+vim
+w3m
+xdg-user-dirs
+xdg-utils
+xosd
+xorg-server
+xorg-twm
+xorg-xinit
+xorg-xrandr
+zathura
