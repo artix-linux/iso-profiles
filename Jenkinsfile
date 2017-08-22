@@ -3,7 +3,10 @@ node {
         checkout scm
     }
     stage('Build') {
-        sh "/var/lib/jenkins/isobuild.sh"
+        echo "buildiso -p ${profile}"
+    }
+    stage('Build') {
+        echo "buildiso -p ${profile}"
+        sh "printenv"
     }
 }
-
