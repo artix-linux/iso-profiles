@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Build Iso') {
             steps {
-                checkout scm
                 echo "buildiso -p ${profile}"
                 sh "printenv"
             }
