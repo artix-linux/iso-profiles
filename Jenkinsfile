@@ -5,7 +5,6 @@ pipeline {
       steps {
         echo '"buildiso -p ${profile}"'
         sh 'printenv'
-        echo '"Commit ${env.GIT_COMMIT}"'
       }
       post {
         success {
