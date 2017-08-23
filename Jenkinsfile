@@ -4,10 +4,10 @@ pipeline {
     stage('Build') {
       steps {
         sh '''
-            env.GIT_COMMIT=$(git rev-parse HEAD)
-            env.DEST=$(git show --pretty=format: --name-only "${GIT_COMMIT}")
+            GIT_COMMIT=$(git rev-parse HEAD)
+            DEST=$(git show --pretty=format: --name-only "${GIT_COMMIT}")
             for f in ${DEST[@]};do
-                [[ $f == */profile.conf ]] && env.PROFILE=${f%/profile.conf}
+                [[ $f == */profile.conf ]] && PROFILE=${f%/profile.conf}
             done
             '''
         echo '"buildiso -p ${PROFILE}"'
@@ -15,9 +15,9 @@ pipeline {
       post {
         success {
           echo "deployiso -p ${PROFILE}"
-
+          
         }
-
+        
       }
     }
   }
@@ -25,5 +25,5 @@ pipeline {
     GIT_COMMIT = ''
     DEST = ''
     PROFILE = ''
-    }
+  }
 }
