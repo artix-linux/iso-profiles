@@ -1,12 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Checkout') {
             steps {
                 checkout scm
             }
         }
-        stage('Deploy') {
+        stage('Build') {
             steps {
                 echo "buildiso -p ${profile}"
                 sh "printenv"
