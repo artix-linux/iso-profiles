@@ -8,10 +8,10 @@ pipeline {
                 echo "buildiso -p ${profile}"
                 sh "printenv"
             }
-        }
-        post {
-            success {
-                echo 'deployiso -p ${profile}'
+            post {
+                success {
+                    echo 'deployiso -p ${profile}'
+                }
             }
         }
     }
