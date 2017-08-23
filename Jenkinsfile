@@ -10,7 +10,7 @@ pipeline {
                 if [[ $f == */profile.conf ]];then
                     PROFILE=${f%/profile.conf}
                     echo  "buildiso -p ${PROFILE}"
-                fi
+                fi done
             '''
       }
       post {
