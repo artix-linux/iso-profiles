@@ -17,11 +17,7 @@ pipeline {
           echo "deployiso -p ${profile}"
 
         }
-
       }
     }
-  }
-  environment {
-    git_commit = ''
   }
 }
