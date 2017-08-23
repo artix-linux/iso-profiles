@@ -3,7 +3,7 @@ artix-sddm-theme
 artix-lxqt-presets
 compton
 #compton-conf
-dmidecode
+#dmidecode
 #lximage-qt
 #qpdfview
 #qupzilla
