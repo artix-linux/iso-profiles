@@ -5,8 +5,7 @@ pipeline {
       steps {
         sh '''
             env.GIT_COMMIT=$(git rev-parse HEAD)
-            echo env.GIT_COMMIT
-        '''
+            echo ${env.GIT_COMMIT}'''
         echo '"buildiso -p ${profile}"'
       }
       post {
