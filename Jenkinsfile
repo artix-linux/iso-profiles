@@ -1,17 +1,23 @@
 pipeline {
   agent any
+  environment{
+    GIT_COMMIT = ''
+  }
   stages {
     stage('Build') {
       steps {
-        echo '"buildiso -p ${profile}"'
-        sh 'git rev-parse HEAD"'
+        sh '''
+            env.GIT_COMMIT=git rev-parse HEAD
+            echo env.GIT_COMMIT
+        '''
+        echo "buildiso -p ${profile}"
       }
       post {
         success {
           echo "deployiso -p ${profile}"
-          
+
         }
-        
+
       }
     }
   }
