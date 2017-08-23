@@ -4,6 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo '"buildiso -p ${profile}"'
+        sh 'git rev-parse HEAD"'
       }
       post {
         success {
@@ -16,6 +17,5 @@ pipeline {
   }
   environment {
     git_commit = ''
-    profile = ''
   }
 }
