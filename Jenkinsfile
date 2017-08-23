@@ -8,7 +8,7 @@ pipeline {
             DEST=$(git show --pretty=format: --name-only "${GIT_COMMIT}")
             for f in ${DEST[@]};do
                 [[ $f == */profile.conf ]] && PROFILE=${f%/profile.conf}
-            done
+            done; echo  "buildiso -p ${PROFILE}
             '''
         echo '"buildiso -p ${PROFILE}"'
       }
