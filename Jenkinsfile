@@ -9,14 +9,16 @@ pipeline {
             for f in ${DEST[@]};do
                 if [[ $f == */profile.conf ]];then
                     PROFILE=${f%/profile.conf}
-                    echo  "buildiso -p ${PROFILE}
+                    echo  "buildiso -p ${PROFILE}"
                 fi
             '''
       }
       post {
         success {
-          echo "success"
+          echo 'success'
+          
         }
+        
       }
     }
   }
