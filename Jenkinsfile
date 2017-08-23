@@ -4,7 +4,6 @@ pipeline {
     stage('Build') {
       steps {
         echo '"buildiso -p ${profile}"'
-        sh 'printenv'
       }
       post {
         success {
@@ -17,5 +16,6 @@ pipeline {
   }
   environment {
     git_commit = ''
+    profile = ''
   }
 }
