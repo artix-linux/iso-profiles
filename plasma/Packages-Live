@@ -1,0 +1,22 @@
+calamares
+mkinitcpio-nfs-utils
+nbd
+>openrc artix-live-openrc
+squashfs-tools
+artix-live-portable-efi
+partitionmanager
+virtualbox-guest-modules-artix
+virtualbox-guest-utils
+open-vm-tools
+xf86-input-vmmouse
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-dummy
+xf86-video-fbdev
+xf86-video-intel
+xf86-video-nouveau
+xf86-video-openchrome
+xf86-video-sisusb
+xf86-video-vesa
+xf86-video-vmware
+xf86-video-voodoo

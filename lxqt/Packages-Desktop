@@ -3,7 +3,7 @@ artix-sddm-theme
 artix-lxqt-presets
 compton
 #compton-conf
-dmidecode
+#dmidecode
 #lximage-qt
 #qpdfview
 #qupzilla
@@ -14,7 +14,6 @@ inxi
 kwrite
 lxqt-about
 lxqt-admin
-lxqt-common
 lxqt-config
 lxqt-globalkeys
 lxqt-notificationd
@@ -26,6 +25,7 @@ lxqt-qtplugin
 lxqt-runner
 lxqt-session
 lxqt-sudo
+lxqt-themes
 media-player-info
 mobile-broadband-provider-info
 modemmanager

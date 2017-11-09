@@ -1,0 +1,84 @@
+alsa-firmware
+artix-sddm-theme
+artix-lxqt-presets
+dmidecode
+inxi
+kwrite
+mobile-broadband-provider-info
+modemmanager
+nss-mdns
+>openrc alsa-utils-openrc
+>openrc avahi-openrc
+>openrc displaymanager-openrc
+>openrc json-c
+>openrc networkmanager-openrc
+>openrc ntp-openrc
+>openrc openrc-settingsd
+>openrc openssh-openrc
+>openrc syslog-ng-openrc
+powertop
+terminus-font
+ttf-bitstream-vera
+ttf-dejavu
+ttf-droid
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
+xdg-user-dirs
+xdg-utils
+xorg-server
+xorg-twm
+xorg-xinit
+bluedevil
+breeze
+breeze-gtk
+discover
+drkonqi
+kactivitymanagerd
+kde-cli-tools
+kde-gtk-config
+kdecoration
+kdeplasma-addons
+kgamma5
+khotkeys
+kinfocenter
+kmenuedit
+knetattach
+kscreen
+kscreenlocker
+ksshaskpass
+ksysguard
+kuiserver
+kwallet-pam
+kwayland-integration
+kwin
+kwrited
+libkscreen
+libksysguard
+milou
+oxygen
+plasma-desktop
+plasma-integration
+plasma-nm
+plasma-pa
+plasma-sdk
+plasma-workspace
+plasma-workspace-wallpapers
+polkit-kde-agent
+powerdevil
+sddm-kcm
+systemsettings
+user-manager
+xdg-desktop-portal-kde
+dolphin
+kate
+kdialog
+keditbookmarks
+kfind
+khelpcenter
+konqueror
+konsole
+kwrite
+ark
+okular
+kwalletmanager
