@@ -3,9 +3,8 @@ artix-sddm-theme
 artix-lxqt-presets
 compton
 #compton-conf
-#dmidecode
-#lximage-qt
-#qpdfview
+lximage-qt
+qpdfview
 #qupzilla
 #vlc
 gvfs
