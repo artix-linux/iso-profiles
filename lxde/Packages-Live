@@ -1,0 +1,12 @@
+calamares
+mkinitcpio-nfs-utils
+nbd
+>openrc artix-live-openrc
+squashfs-tools
+artix-live-portable-efi
+artools-base
+gparted
+virtualbox-guest-modules-artix
+virtualbox-guest-utils
+open-vm-tools
+orca
