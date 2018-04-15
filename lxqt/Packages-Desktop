@@ -1,37 +1,14 @@
-alsa-firmware
 artix-sddm-theme
 artix-lxqt-presets
-compton
-#compton-conf
-lximage-qt
-qpdfview
-#qupzilla
-#vlc
-gvfs
+
+alsa-firmware
+powertop
 inxi
-#juffed-qt5
-kwrite
-lxqt-about
-lxqt-admin
-lxqt-config
-lxqt-globalkeys
-lxqt-notificationd
-lxqt-openssh-askpass
-lxqt-panel
-lxqt-policykit
-lxqt-powermanagement
-lxqt-qtplugin
-lxqt-runner
-lxqt-session
-lxqt-sudo
-lxqt-themes
-media-player-info
-mobile-broadband-provider-info
+
 modemmanager
 network-manager-applet
 nss-mdns
-obconf-qt
-openbox
+
 >openrc alsa-utils-openrc
 >openrc avahi-openrc
 >openrc displaymanager-openrc
@@ -41,10 +18,35 @@ openbox
 >openrc openrc-settingsd
 >openrc openssh-openrc
 >openrc syslog-ng-openrc
+>openrc bluez-openrc
+
+>runit alsa-utils-runit
+>runit avahi-runit
+>runit sddm-runit
+>runit json-c
+>runit networkmanager-runit
+>runit ntp-runit
+>runit openssh-runit
+>runit syslog-ng-runit
+>runit bluez-runit
+
+librabbitmq-c
+libmongoc
+#python
+
+lxqt
+
+compton
+#compton-conf
+lximage-qt
+qpdfview
+gvfs
+kwrite
+obconf-qt
 pcmanfm-qt
-powertop
-qterminal
 falkon
+xarchiver
+
 terminus-font
 ttf-bitstream-vera
 ttf-dejavu
@@ -52,12 +54,14 @@ ttf-droid
 ttf-inconsolata
 ttf-indic-otf
 ttf-liberation
-xarchiver
+
 xdg-user-dirs
 xdg-utils
+
 xorg-server
 xorg-twm
 xorg-xinit
+
 xf86-input-vmmouse
 xf86-video-amdgpu
 xf86-video-ati
@@ -70,6 +74,4 @@ xf86-video-sisusb
 xf86-video-vesa
 xf86-video-vmware
 xf86-video-voodoo
-librabbitmq-c
-libmongoc
-python
+
