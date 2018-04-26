@@ -59,7 +59,6 @@ xdg-user-dirs
 xdg-utils
 
 xorg-server
-xorg-twm
 xorg-xinit
 
 xf86-input-vmmouse
