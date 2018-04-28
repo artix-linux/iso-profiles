@@ -1,14 +1,16 @@
-calamares
 mkinitcpio-nfs-utils
-nbd
->openrc artix-live-openrc
 squashfs-tools
+nbd
+
+>openrc artix-live-openrc
+>runit artix-live-runit
 artix-live-portable-efi
-artools-base
+
+calamares
 gparted
+#orca
+
 virtualbox-guest-modules-artix
 virtualbox-guest-utils
 open-vm-tools
-orca
-r8168
 broadcom-wl

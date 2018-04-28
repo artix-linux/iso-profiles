@@ -1,15 +1,16 @@
-calamares-branding
 mkinitcpio-nfs-utils
+squashfs-tools
 nbd
+
 >openrc artix-live-openrc
 >runit artix-live-runit
-squashfs-tools
 artix-live-portable-efi
-artools-base
+
+calamares-branding
 partitionmanager
+#orca
+
 virtualbox-guest-modules-artix
 virtualbox-guest-utils
 open-vm-tools
-#orca
-r8168
 broadcom-wl

@@ -70,7 +70,6 @@ artix-sysvcompat
 >runit nfs-utils-runit
 >runit rsync-runit
 >runit wpa_supplicant-runit
->runit opentmpfiles
 os-prober
 pacman
 pciutils
