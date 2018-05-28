@@ -1,4 +1,4 @@
-VERSION=0.7
+VERSION=0.8
 
 PKG = iso-profiles
 TOOLS = artools
@@ -42,13 +42,6 @@ LXQT = \
 LXQT_DM = \
 	lxqt/desktop-overlay/etc/sddm.conf
 
-LXDE = \
-	$(wildcard lxde/Packages-*) \
-	lxde/profile.conf
-
-LXDE_DM = \
-	$(wildcard lxde/desktop-overlay/etc/lightdm/*.conf)
-
 install-base:
 	install $(DMODE) $(DESTDIR)$(BASEDIR)
 	install $(FMODE) $(BASE) $(DESTDIR)$(BASEDIR)
@@ -71,12 +64,6 @@ install-lxqt:
 	install $(DMODE)  $(DESTDIR)$(LXQTDIR)$(SYSCONFDIR)
 	install $(FMODE) $(LXQT_DM) $(DESTDIR)$(LXQTDIR)$(SYSCONFDIR)
 
-install-lxde:
-	install $(DMODE) $(DESTDIR)$(LXDEDOR)
-	install $(FMODE) $(LXDE) $(DESTDIR)$(LXDEDOR)
-	install $(DMODE)  $(DESTDIR)$(LXDEDOR)$(SYSCONFDIR)/lightdm
-	install $(FMODE) $(LXDE_DM) $(DESTDIR)$(LXDEDOR)$(SYSCONFDIR)/lightdm
-
 uninstall-base:
 	for f in $(notdir $(BASE)); do $(RM) $(DESTDIR)$(BASEDIR)/$$f; done
 	for f in $(notdir $(LIVE)); do $(RM) $(DESTDIR)$(OVERLAYDIR)/$$f; done
@@ -90,17 +77,13 @@ uninstall-lxqt:
 	for f in $(notdir $(LXQT_DM)); do $(RM) $(DESTDIR)$(LXQTDIR)$(SYSCONFDIR)/$$f; done
 	$(RMD) $(DESTDIR)$(LXQTDIR)
 
-uninstall-lxde:
-	for f in $(notdir $(LXDE)); do $(RM) $(DESTDIR)$(LXDEDOR)/$$f; done
-	for f in $(notdir $(LXDE_DM)); do $(RM) $(DESTDIR)$(LXDEDOR)$(SYSCONFDIR)/lightdm/$$f; done
-	$(RMD) $(DESTDIR)$(LXDEDOR)
+install: install-lxqt install-base
 
-install: install-lxqt install-lxde install-base
-
-uninstall: uninstall-lxqt uninstall-lxde uninstall-base
+uninstall: uninstall-lxqt uninstall-base
 
 dist:
 	git archive --format=tar --prefix=$(PKG)-$(VERSION)/ $(VERSION) | gzip -9 > $(PKG)-$(VERSION).tar.gz
 	gpg --detach-sign --use-agent $(PKG)-$(VERSION).tar.gz
 
-.PHONY: install uninstall dist
+.PHONY: install uninstall dist install-lxqt install-base uninstall-lxqt uninstall-base
+
