@@ -32,7 +32,7 @@ iputils
 ipw2100-fw
 ipw2200-fw
 jfsutils
-KERNEL
+linux
 less
 licenses
 linux-firmware
