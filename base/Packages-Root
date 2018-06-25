@@ -54,7 +54,9 @@ ntfs-3g
 >openrc mdadm-openrc
 >openrc nfs-utils-openrc
 >openrc rsync-openrc
+>openrc openssh-openrc
 >openrc wpa_supplicant-openrc
+>openrc syslog-ng-openrc
 >runit acpid-runit
 >runit cronie-runit
 >runit dhcpcd-runit
@@ -63,7 +65,9 @@ ntfs-3g
 >runit mdadm-runit
 >runit nfs-utils-runit
 >runit rsync-runit
+>openrc openssh-runit
 >runit wpa_supplicant-runit
+>runit syslog-ng-runit
 artix-sysvcompat
 os-prober
 pacman

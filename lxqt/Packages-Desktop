@@ -16,8 +16,6 @@ nss-mdns
 >openrc networkmanager-openrc
 >openrc ntp-openrc
 >openrc openrc-settingsd
->openrc openssh-openrc
->openrc syslog-ng-openrc
 >openrc bluez-openrc
 
 >runit alsa-utils-runit
@@ -26,8 +24,6 @@ nss-mdns
 >runit json-c
 >runit networkmanager-runit
 >runit ntp-runit
->runit openssh-runit
->runit syslog-ng-runit
 >runit bluez-runit
 
 librabbitmq-c

@@ -5,3 +5,15 @@ nbd
 >openrc artix-live-openrc
 >runit artix-live-runit
 artix-live-portable-efi
+
+>openrc networkmanager-openrc
+>openrc ntp-openrc
+>openrc openssh-openrc
+>openrc syslog-ng-openrc
+>openrc bluez-openrc
+
+>runit networkmanager-runit
+>runit ntp-runit
+>runit openssh-runit
+>runit syslog-ng-runit
+>runit bluez-runit
