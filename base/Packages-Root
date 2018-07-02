@@ -65,7 +65,7 @@ ntfs-3g
 >runit mdadm-runit
 >runit nfs-utils-runit
 >runit rsync-runit
->openrc openssh-runit
+>runit openssh-runit
 >runit wpa_supplicant-runit
 >runit syslog-ng-runit
 artix-sysvcompat
@@ -89,5 +89,4 @@ util-linux
 which
 efibootmgr
 xfsprogs
-zd1211-firmware
 zsh
