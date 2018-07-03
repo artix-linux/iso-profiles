@@ -72,7 +72,6 @@ artix-sysvcompat
 os-prober
 pacman
 pciutils
-pcmciautils
 perl
 procps-ng
 psmisc
